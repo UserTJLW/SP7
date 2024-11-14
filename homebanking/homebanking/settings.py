@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = '/login/'  # Cambia esta ruta si usas otra para el login
 
 # Application definition
 
