@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 
 class Cliente(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, default=1)  # Relación uno a uno con el usuario
+    user = models.OneToOneField(User, on_delete=models.CASCADE)  # Relación uno a uno con el usuario
     customer_name = models.CharField(max_length=100)
     customer_surname = models.CharField(max_length=100)
     customer_DNI = models.CharField(max_length=20)
